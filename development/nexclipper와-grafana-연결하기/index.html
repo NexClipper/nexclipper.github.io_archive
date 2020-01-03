@@ -40,7 +40,15 @@
         }
       }
     })
-  </script><link rel="icon" href="/icons/icon-48x48.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><title data-react-helmet="true">nexclipper와 grafana 연결하기 | 넥스클리퍼 기술 블로그</title><meta data-react-helmet="true" name="description" content="kubernetes가 설치되어있다는 전제하에 시작한다. Prerequisite System Requirements linux Go: 1.11 or above ProtocolBuffer Compiler TimescaleDB Setup build environments Initialize database Install TimescaleDB (docker) Refer to https://docs.timescale.com/latest/getting-started/installation document…"/><meta data-react-helmet="true" property="og:title" content="nexclipper와 grafana 연결하기"/><meta data-react-helmet="true" property="og:description" content="kubernetes가 설치되어있다는 전제하에 시작한다. Prerequisite System Requirements linux Go: 1.11 or above ProtocolBuffer Compiler TimescaleDB Setup build environments Initialize database Install TimescaleDB (docker) Refer to https://docs.timescale.com/latest/getting-started/installation document…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="[NexClipper]"/><meta data-react-helmet="true" name="twitter:title" content="nexclipper와 grafana 연결하기"/><meta data-react-helmet="true" name="twitter:description" content="kubernetes가 설치되어있다는 전제하에 시작한다. Prerequisite System Requirements linux Go: 1.11 or above ProtocolBuffer Compiler TimescaleDB Setup build environments Initialize database Install TimescaleDB (docker) Refer to https://docs.timescale.com/latest/getting-started/installation document…"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-874d7ded886ac8fc45b8.js"/><link as="script" rel="preload" href="/app-8ddc6baa431138b6dad5.js"/><link as="script" rel="preload" href="/styles-9c2595e71496fceb1274.js"/><link as="script" rel="preload" href="/commons-519fea16a7720c505ccb.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-73eee1fe49f1f15cec8d.js"/><link as="fetch" rel="preload" href="/page-data\development\nexclipper와-grafana-연결하기\page-data.json" crossorigin="anonymous"/></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="top"><a class="link" href="/">넥스클리퍼 기술 블로그</a><a href="https://github.com/NexClipper" class="github" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg></a></div><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem"><div class="switch-container"><label for="normal-switch"><div style="position:relative;display:inline-block;text-align:left;opacity:1;direction:ltr;border-radius:12px;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s;touch-action:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none"><div class="react-switch-bg" style="height:24px;width:48px;margin:0;position:relative;background:#d9dfe2;border-radius:12px;cursor:pointer;-webkit-transition:background 0.25s;-moz-transition:background 0.25s;transition:background 0.25s"><div style="height:24px;width:26px;position:relative;opacity:0;pointer-events:none;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s"><div class="icon checkedIcon">D</div></div><div style="height:24px;width:26px;position:absolute;opacity:1;right:0;top:0;pointer-events:none;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s"><div class="icon uncheckedIcon">L</div></div></div><div class="react-switch-handle" style="height:22px;width:22px;background:#ffffff;display:inline-block;cursor:pointer;border-radius:50%;position:absolute;transform:translateX(1px);top:1px;outline:0;border:0;-webkit-transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s;-moz-transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s;transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s"></div><input type="checkbox" role="switch" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px" id="normal-switch"/></div></label></div><h1>nexclipper와 grafana 연결하기</h1><div><p>kubernetes가 설치되어있다는 전제하에 시작한다.</p>
+  </script><link rel="icon" href="/icons/icon-48x48.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=c8d514d3622fbf85ac70ee02d170eb2f"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><title data-react-helmet="true">TimescaleDB와 NexClipper를 이용한 Kubernetes 모니터링하기 | 넥스클리퍼 기술 블로그</title><meta data-react-helmet="true" name="description" content="쿠버네티스 모니터링으로 프로메테우스가 가장 많이 사용되지만 엔터프라이즈 환경에서는 다음과 같이 지원되지 않는 몇가지 문제가 있다. 롱텀데이터 저장 여러 클러스터, 서로 다른 서버 메트릭에 대한 글로벌 뷰 엔드포인트 증가에 따른 확장성 방화벽 내의 엔드포인트 접근 이런 문제들을 해결하기 위해 타노스, 콜텍스등 여러 솔루션들이 나오고 있으며 이중 NexClipper를 통한 Kubernetes 모니터링을 소개 하고자 한다. 설치는 Kubernetes…"/><meta data-react-helmet="true" property="og:title" content="TimescaleDB와 NexClipper를 이용한 Kubernetes 모니터링하기"/><meta data-react-helmet="true" property="og:description" content="쿠버네티스 모니터링으로 프로메테우스가 가장 많이 사용되지만 엔터프라이즈 환경에서는 다음과 같이 지원되지 않는 몇가지 문제가 있다. 롱텀데이터 저장 여러 클러스터, 서로 다른 서버 메트릭에 대한 글로벌 뷰 엔드포인트 증가에 따른 확장성 방화벽 내의 엔드포인트 접근 이런 문제들을 해결하기 위해 타노스, 콜텍스등 여러 솔루션들이 나오고 있으며 이중 NexClipper를 통한 Kubernetes 모니터링을 소개 하고자 한다. 설치는 Kubernetes…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="[NexClipper]"/><meta data-react-helmet="true" name="twitter:title" content="TimescaleDB와 NexClipper를 이용한 Kubernetes 모니터링하기"/><meta data-react-helmet="true" name="twitter:description" content="쿠버네티스 모니터링으로 프로메테우스가 가장 많이 사용되지만 엔터프라이즈 환경에서는 다음과 같이 지원되지 않는 몇가지 문제가 있다. 롱텀데이터 저장 여러 클러스터, 서로 다른 서버 메트릭에 대한 글로벌 뷰 엔드포인트 증가에 따른 확장성 방화벽 내의 엔드포인트 접근 이런 문제들을 해결하기 위해 타노스, 콜텍스등 여러 솔루션들이 나오고 있으며 이중 NexClipper를 통한 Kubernetes 모니터링을 소개 하고자 한다. 설치는 Kubernetes…"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-874d7ded886ac8fc45b8.js"/><link as="script" rel="preload" href="/app-8ddc6baa431138b6dad5.js"/><link as="script" rel="preload" href="/styles-9c2595e71496fceb1274.js"/><link as="script" rel="preload" href="/commons-519fea16a7720c505ccb.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-73eee1fe49f1f15cec8d.js"/><link as="fetch" rel="preload" href="/page-data\development\nexclipper와-grafana-연결하기\page-data.json" crossorigin="anonymous"/></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="top"><a class="link" href="/">넥스클리퍼 기술 블로그</a><a href="https://github.com/NexClipper" class="github" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg></a></div><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem"><div class="switch-container"><label for="normal-switch"><div style="position:relative;display:inline-block;text-align:left;opacity:1;direction:ltr;border-radius:12px;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s;touch-action:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none"><div class="react-switch-bg" style="height:24px;width:48px;margin:0;position:relative;background:#d9dfe2;border-radius:12px;cursor:pointer;-webkit-transition:background 0.25s;-moz-transition:background 0.25s;transition:background 0.25s"><div style="height:24px;width:26px;position:relative;opacity:0;pointer-events:none;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s"><div class="icon checkedIcon">D</div></div><div style="height:24px;width:26px;position:absolute;opacity:1;right:0;top:0;pointer-events:none;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s"><div class="icon uncheckedIcon">L</div></div></div><div class="react-switch-handle" style="height:22px;width:22px;background:#ffffff;display:inline-block;cursor:pointer;border-radius:50%;position:absolute;transform:translateX(1px);top:1px;outline:0;border:0;-webkit-transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s;-moz-transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s;transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s"></div><input type="checkbox" role="switch" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px" id="normal-switch"/></div></label></div><h1>TimescaleDB와 NexClipper를 이용한 Kubernetes 모니터링하기</h1><div><p>쿠버네티스 모니터링으로 프로메테우스가 가장 많이 사용되지만 엔터프라이즈 환경에서는 다음과 같이 지원되지 않는 몇가지 문제가 있다.</p>
+<ul>
+<li>롱텀데이터 저장</li>
+<li>여러 클러스터, 서로 다른 서버 메트릭에 대한 글로벌 뷰</li>
+<li>엔드포인트 증가에 따른 확장성</li>
+<li>방화벽 내의 엔드포인트 접근</li>
+</ul>
+<p>이런 문제들을 해결하기 위해 타노스, 콜텍스등 여러 솔루션들이 나오고 있으며 이중 NexClipper를 통한 Kubernetes 모니터링을 소개 하고자 한다.</p>
+<p>설치는 Kubernetes가 설치되어있다는 전제하에 시작한다.</p>
 <h1 id="prerequisite"><a href="#prerequisite" aria-label="prerequisite permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prerequisite</h1>
 <h2 id="system-requirements"><a href="#system-requirements" aria-label="system requirements permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>System Requirements</h2>
 <ul>
@@ -127,218 +135,8 @@ env:
             - name: NEXAGENT_KUBERNETES_NAMESPACE
               value: nexclipper</code></pre></div>
 <div class="gatsby-highlight" data-language="shellscript"><pre class="language-shellscript"><code class="language-shellscript">kubectl create -f nexagent.yaml</code></pre></div>
-<h1 id="install-prometheus-and-grafana"><a href="#install-prometheus-and-grafana" aria-label="install prometheus and grafana permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Prometheus and Grafana</h1>
-<h2 id="install-prometheus"><a href="#install-prometheus" aria-label="install prometheus permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Prometheus</h2>
-<h3 id="create-a-namespace"><a href="#create-a-namespace" aria-label="create a namespace permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a Namespace</h3>
-<div class="gatsby-highlight" data-language="shellscript"><pre class="language-shellscript"><code class="language-shellscript">kubectl create namespace monitoring</code></pre></div>
-<h3 id="create-a-deployment"><a href="#create-a-deployment" aria-label="create a deployment permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a Deployment</h3>
-<div class="gatsby-highlight" data-language="yaml"><pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1beta1
-<span class="token key atrule">kind</span><span class="token punctuation">:</span> ClusterRole
-<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-  <span class="token key atrule">name</span><span class="token punctuation">:</span> prometheus
-<span class="token key atrule">rules</span><span class="token punctuation">:</span>
-<span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">]</span>
-  <span class="token key atrule">resources</span><span class="token punctuation">:</span>
-  <span class="token punctuation">-</span> nodes
-  <span class="token punctuation">-</span> nodes/proxy
-  <span class="token punctuation">-</span> services
-  <span class="token punctuation">-</span> endpoints
-  <span class="token punctuation">-</span> pods
-  <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">,</span> <span class="token string">"list"</span><span class="token punctuation">,</span> <span class="token string">"watch"</span><span class="token punctuation">]</span>
-<span class="token punctuation">-</span> <span class="token key atrule">apiGroups</span><span class="token punctuation">:</span>
-  <span class="token punctuation">-</span> extensions
-  <span class="token key atrule">resources</span><span class="token punctuation">:</span>
-  <span class="token punctuation">-</span> ingresses
-  <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">,</span> <span class="token string">"list"</span><span class="token punctuation">,</span> <span class="token string">"watch"</span><span class="token punctuation">]</span>
-<span class="token punctuation">-</span> <span class="token key atrule">nonResourceURLs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"/metrics"</span><span class="token punctuation">]</span>
-  <span class="token key atrule">verbs</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"get"</span><span class="token punctuation">]</span>
-<span class="token punctuation">---</span>
-<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> rbac.authorization.k8s.io/v1beta1
-<span class="token key atrule">kind</span><span class="token punctuation">:</span> ClusterRoleBinding
-<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-  <span class="token key atrule">name</span><span class="token punctuation">:</span> prometheus
-<span class="token key atrule">roleRef</span><span class="token punctuation">:</span>
-  <span class="token key atrule">apiGroup</span><span class="token punctuation">:</span> rbac.authorization.k8s.io
-  <span class="token key atrule">kind</span><span class="token punctuation">:</span> ClusterRole
-  <span class="token key atrule">name</span><span class="token punctuation">:</span> prometheus
-<span class="token key atrule">subjects</span><span class="token punctuation">:</span>
-<span class="token punctuation">-</span> <span class="token key atrule">kind</span><span class="token punctuation">:</span> ServiceAccount
-  <span class="token key atrule">name</span><span class="token punctuation">:</span> default
-  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> monitoring</code></pre></div>
-<div class="gatsby-highlight" data-language="shellscript"><pre class="language-shellscript"><code class="language-shellscript">kubectl create -f clusterRole.yaml</code></pre></div>
-<h3 id="create-a-config-map"><a href="#create-a-config-map" aria-label="create a config map permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a Config Map</h3>
-<div class="gatsby-highlight" data-language="yaml"><pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
-<span class="token key atrule">kind</span><span class="token punctuation">:</span> ConfigMap
-<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
-  <span class="token key atrule">name</span><span class="token punctuation">:</span> prometheus<span class="token punctuation">-</span>server<span class="token punctuation">-</span>conf
-  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
-    <span class="token key atrule">name</span><span class="token punctuation">:</span> prometheus<span class="token punctuation">-</span>server<span class="token punctuation">-</span>conf
-  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> monitoring
-<span class="token key atrule">data</span><span class="token punctuation">:</span>
-  <span class="token key atrule">prometheus.yml</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token punctuation">-</span>
-    <span class="token key atrule">global</span><span class="token punctuation">:</span>
-      <span class="token key atrule">scrape_interval</span><span class="token punctuation">:</span> 5s
-      <span class="token key atrule">evaluation_interval</span><span class="token punctuation">:</span> 5s
-
-    <span class="token key atrule">scrape_configs</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">'kubernetes-apiservers'</span>
-        <span class="token key atrule">kubernetes_sd_configs</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">role</span><span class="token punctuation">:</span> endpoints
-        <span class="token key atrule">scheme</span><span class="token punctuation">:</span> https
-        <span class="token key atrule">tls_config</span><span class="token punctuation">:</span>
-          <span class="token key atrule">ca_file</span><span class="token punctuation">:</span> /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-        <span class="token key atrule">bearer_token_file</span><span class="token punctuation">:</span> /var/run/secrets/kubernetes.io/serviceaccount/token
-        <span class="token key atrule">relabel_configs</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_namespace<span class="token punctuation">,</span> __meta_kubernetes_service_name<span class="token punctuation">,</span> __meta_kubernetes_endpoint_port_name<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> keep
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> default;kubernetes;https
-
-      <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">'kubernetes-nodes'</span>
-        <span class="token key atrule">scheme</span><span class="token punctuation">:</span> https
-        <span class="token key atrule">tls_config</span><span class="token punctuation">:</span>
-          <span class="token key atrule">ca_file</span><span class="token punctuation">:</span> /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-        <span class="token key atrule">bearer_token_file</span><span class="token punctuation">:</span> /var/run/secrets/kubernetes.io/serviceaccount/token
-        <span class="token key atrule">kubernetes_sd_configs</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">role</span><span class="token punctuation">:</span> node
-        <span class="token key atrule">relabel_configs</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">action</span><span class="token punctuation">:</span> labelmap
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> __meta_kubernetes_node_label_(.+)
-        <span class="token punctuation">-</span> <span class="token key atrule">target_label</span><span class="token punctuation">:</span> __address__
-          <span class="token key atrule">replacement</span><span class="token punctuation">:</span> kubernetes.default.svc<span class="token punctuation">:</span><span class="token number">443</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_node_name<span class="token punctuation">]</span>
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> (.+)
-          <span class="token key atrule">target_label</span><span class="token punctuation">:</span> __metrics_path__
-          <span class="token key atrule">replacement</span><span class="token punctuation">:</span> /api/v1/nodes/$<span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span>/proxy/metrics
-
-      <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">'kubernetes-pods'</span>
-        <span class="token key atrule">kubernetes_sd_configs</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">role</span><span class="token punctuation">:</span> pod
-        <span class="token key atrule">relabel_configs</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_pod_annotation_prometheus_io_scrape<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> keep
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_pod_annotation_prometheus_io_path<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> replace
-          <span class="token key atrule">target_label</span><span class="token punctuation">:</span> __metrics_path__
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> (.+)
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__address__<span class="token punctuation">,</span> __meta_kubernetes_pod_annotation_prometheus_io_port<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> replace
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> (<span class="token punctuation">[</span>^<span class="token punctuation">:</span><span class="token punctuation">]</span>+)(<span class="token punctuation">?</span><span class="token punctuation">:</span><span class="token punctuation">:</span>\d+)<span class="token punctuation">?</span>;(\d+)
-          <span class="token key atrule">replacement</span><span class="token punctuation">:</span> $1<span class="token punctuation">:</span>$2
-          <span class="token key atrule">target_label</span><span class="token punctuation">:</span> __address__
-        <span class="token punctuation">-</span> <span class="token key atrule">action</span><span class="token punctuation">:</span> labelmap
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> __meta_kubernetes_pod_label_(.+)
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_namespace<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> replace
-          <span class="token key atrule">target_label</span><span class="token punctuation">:</span> kubernetes_namespace
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_pod_name<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> replace
-          <span class="token key atrule">target_label</span><span class="token punctuation">:</span> kubernetes_pod_name
-
-      <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">'kubernetes-cadvisor'</span>
-        <span class="token key atrule">scheme</span><span class="token punctuation">:</span> https
-        <span class="token key atrule">tls_config</span><span class="token punctuation">:</span>
-          <span class="token key atrule">ca_file</span><span class="token punctuation">:</span> /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-        <span class="token key atrule">bearer_token_file</span><span class="token punctuation">:</span> /var/run/secrets/kubernetes.io/serviceaccount/token
-        <span class="token key atrule">kubernetes_sd_configs</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">role</span><span class="token punctuation">:</span> node
-        <span class="token key atrule">relabel_configs</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">action</span><span class="token punctuation">:</span> labelmap
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> __meta_kubernetes_node_label_(.+)
-        <span class="token punctuation">-</span> <span class="token key atrule">target_label</span><span class="token punctuation">:</span> __address__
-          <span class="token key atrule">replacement</span><span class="token punctuation">:</span> kubernetes.default.svc<span class="token punctuation">:</span><span class="token number">443</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_node_name<span class="token punctuation">]</span>
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> (.+)
-          <span class="token key atrule">target_label</span><span class="token punctuation">:</span> __metrics_path__
-          <span class="token key atrule">replacement</span><span class="token punctuation">:</span> /api/v1/nodes/$<span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span>/proxy/metrics/cadvisor
-
-      <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">'kubernetes-service-endpoints'</span>
-        <span class="token key atrule">kubernetes_sd_configs</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">role</span><span class="token punctuation">:</span> endpoints
-        <span class="token key atrule">relabel_configs</span><span class="token punctuation">:</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_service_annotation_prometheus_io_scrape<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> keep
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_service_annotation_prometheus_io_scheme<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> replace
-          <span class="token key atrule">target_label</span><span class="token punctuation">:</span> __scheme__
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> (https<span class="token punctuation">?</span>)
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_service_annotation_prometheus_io_path<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> replace
-          <span class="token key atrule">target_label</span><span class="token punctuation">:</span> __metrics_path__
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> (.+)
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__address__<span class="token punctuation">,</span> __meta_kubernetes_service_annotation_prometheus_io_port<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> replace
-          <span class="token key atrule">target_label</span><span class="token punctuation">:</span> __address__
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> (<span class="token punctuation">[</span>^<span class="token punctuation">:</span><span class="token punctuation">]</span>+)(<span class="token punctuation">?</span><span class="token punctuation">:</span><span class="token punctuation">:</span>\d+)<span class="token punctuation">?</span>;(\d+)
-          <span class="token key atrule">replacement</span><span class="token punctuation">:</span> $1<span class="token punctuation">:</span>$2
-        <span class="token punctuation">-</span> <span class="token key atrule">action</span><span class="token punctuation">:</span> labelmap
-          <span class="token key atrule">regex</span><span class="token punctuation">:</span> __meta_kubernetes_service_label_(.+)
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_namespace<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> replace
-          <span class="token key atrule">target_label</span><span class="token punctuation">:</span> kubernetes_namespace
-        <span class="token punctuation">-</span> <span class="token key atrule">source_labels</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>__meta_kubernetes_service_name<span class="token punctuation">]</span>
-          <span class="token key atrule">action</span><span class="token punctuation">:</span> replace
-          <span class="token key atrule">target_label</span><span class="token punctuation">:</span> kubernetes_name</code></pre></div>
-<div class="gatsby-highlight" data-language="shellscript"><pre class="language-shellscript"><code class="language-shellscript">kubectl create -f config-map.yaml</code></pre></div>
-<h3 id="create-a-prometheus-deployment"><a href="#create-a-prometheus-deployment" aria-label="create a prometheus deployment permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a Prometheus Deployment</h3>
-<div class="gatsby-highlight" data-language="shellscript"><pre class="language-shellscript"><code class="language-shellscript">apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: prometheus-deployment
-  namespace: monitoring
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: prometheus-server
-  template:
-    metadata:
-      labels:
-        app: prometheus-server
-    spec:
-      containers:
-        - name: prometheus
-          image: prom/prometheus:v2.2.1
-          args:
-            - &quot;--config.file=/etc/prometheus/prometheus.yml&quot;
-            - &quot;--storage.tsdb.path=/prometheus/&quot;
-          ports:
-            - containerPort: 9090
-          volumeMounts:
-            - name: prometheus-config-volume
-              mountPath: /etc/prometheus/
-            - name: prometheus-storage-volume
-              mountPath: /prometheus/
-      volumes:
-        - name: prometheus-config-volume
-          configMap:
-            defaultMode: 420
-            name: prometheus-server-conf
-
-        - name: prometheus-storage-volume
-          emptyDir: {}
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: prometheus-service
-  namespace: monitoring
-  annotations:
-      prometheus.io/scrape: &#39;true&#39;
-      prometheus.io/port:   &#39;9090&#39;
-
-spec:
-  selector:
-    app: prometheus-server
-  type: NodePort
-  ports:
-    - port: 8080
-      targetPort: 9090
-      nodePort: 30000</code></pre></div>
-<div class="gatsby-highlight" data-language="shellscript"><pre class="language-shellscript"><code class="language-shellscript">kubectl create -f prometheus-deployment.yaml</code></pre></div>
-<h2 id="install-grafana"><a href="#install-grafana" aria-label="install grafana permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Grafana</h2>
-<h3 id="create-a-configmap"><a href="#create-a-configmap" aria-label="create a configmap permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a Configmap</h3>
+<h1 id="install-grafana"><a href="#install-grafana" aria-label="install grafana permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Grafana</h1>
+<h2 id="create-a-configmap"><a href="#create-a-configmap" aria-label="create a configmap permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a Configmap</h2>
 <div class="gatsby-highlight" data-language="yaml"><pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
 <span class="token key atrule">kind</span><span class="token punctuation">:</span> ConfigMap
 <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
@@ -361,7 +159,7 @@ spec:
         <span class="token punctuation">]</span>
     <span class="token punctuation">}</span></code></pre></div>
 <div class="gatsby-highlight" data-language="shellscript"><pre class="language-shellscript"><code class="language-shellscript">kubectl create -f grafana-datasource-config.yaml</code></pre></div>
-<h3 id="create-a-grafana-deployment"><a href="#create-a-grafana-deployment" aria-label="create a grafana deployment permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a Grafana Deployment</h3>
+<h2 id="create-a-grafana-deployment"><a href="#create-a-grafana-deployment" aria-label="create a grafana deployment permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a Grafana Deployment</h2>
 <div class="gatsby-highlight" data-language="yaml"><pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
 <span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
 <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
@@ -500,7 +298,67 @@ spec:
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
       />
-    </span></p></div><div class="social-share"></div><hr class="custom-hr"/><div class="bio"><div class="author"><div class="author-description"><div class="author-image gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:72px;height:72px;border-radius:100%"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAACQklEQVQ4y61US4/SUBRuXLvyj/gnTPwV6sqFKxe6cFaSMGPihoUGoZhZTFuMzENiZQJJlTJDWIKJRpkhZoLCECaMPDoCQtvveu+FllIdQgy3OTmn595+/c49D2E8Hv9epQhkxUvAksumj2nbsKgsWpcyZJuOdsypEMv2OCdqxnAB4ByYflTEZqGAo+ZP/4/mQIXLwJiiYXL9tVFGSJNw41mEXH0okuf6MfEwddj/G3DKzGXAbi9WCOHx2xcksJ8h19Y2yZV72/hU68IH+jegA8ZMyza5/nKWRyBzl6ztxcj97de4/nQHwh2FiAcn/E5NyyZeRMHHijtZRpn+NTrHk4ObCOkPEFBlPEru4JachXBbIZHcAkCbloLtlgMFo89wfEGyJ1F8+BZFo/sd50YPxmDAz+1/buDjj/Y0ZBteMgL8eZ9GPxwbFNeaKxdnz3nHzO/4JnV4XKmgQuW0cYp+v8+EH+q0u1BTKrK6TorFImq1GgzjggxHI7Q7HcaWDIZDQluO9Lo9zpIDapqG9Y0NKIqCYHAd8fgrKPE4l8N8HtVqFbHYS+qPE5mekWWZ2djakkgwGIRE33d392Ca5oRhuVxGqVTCm2QSoijiXSqFJLU17T0SiQTS6TT0XI4wwGhUhCRJiEQiUFUV4XAYmUyGMjcmIfvukDsty3J9NBwwYXar1UKzeYYODbder/OzLEneshO8bcTuxNNOcxXL9nwJwtTnNoKblGWmjTMv/D0+66iJY6l56P8aPsSlps1/D9hVA/4BIADo8qlxIWsAAAAASUVORK5CYII=" alt="[NexClipper]" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/cbf85de7c8effeb1724f113576bcb874/c5212/profile.png 1x,
+    </span></p>
+<h2 id="dashboard-추가"><a href="#dashboard-%EC%B6%94%EA%B0%80" aria-label="dashboard 추가 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dashboard 추가</h2>
+<p>왼쪽의 <code class="language-text">+</code>버튼을 클릭한 후에 <code class="language-text">create dashboard</code> 로 들어감
+<code class="language-text">Add Query</code> 를 클릭</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 54.166666666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABFUlEQVQoz62R206DQBCGubLaiEZYTrtAKYfSoGm8amp8YtPUciwaH+53F4qp1cheePGFmWHnm2FRPtoGh/YdRVnhZfuK7S7Hbl9iX1Qn1Gc5J6+QlzWq5g1l3aKoDtzRQNFuVWTZAzw/gGk5MEy7gxgmCDGh6wY0jXS5TvraEJv8nOv6cBwGxjw4lEERL6MwQciZz2MkScrjGFG04HmE2SxEEESg1OsGiaED/WDr+OwXUQwuFE1CJlivN1itHrF5ekaaZp1MDGPM/yH8DeVaVTuRaBSIeLm8P24Yf9Uo8+SEk8kl/3YXNr+HAcuisGz6vcZzaeHpz/iL4Zy0cGy61IYXZxuONYwKp9Or/xVqdzcgkvcjwydcrT6pI3Gd5gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="grafana create dashboard"
+        title="grafana create dashboard"
+        src="/static/efa29914ded0d472617f4436d384bb88/799d3/grafana_create_dashboard.png"
+        srcset="/static/efa29914ded0d472617f4436d384bb88/00d96/grafana_create_dashboard.png 148w,
+/static/efa29914ded0d472617f4436d384bb88/0b23c/grafana_create_dashboard.png 295w,
+/static/efa29914ded0d472617f4436d384bb88/799d3/grafana_create_dashboard.png 590w,
+/static/efa29914ded0d472617f4436d384bb88/2a3d6/grafana_create_dashboard.png 885w,
+/static/efa29914ded0d472617f4436d384bb88/ae92f/grafana_create_dashboard.png 1180w,
+/static/efa29914ded0d472617f4436d384bb88/eff2e/grafana_create_dashboard.png 1920w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p><code class="language-text">Query</code>를 <code class="language-text">PostgreSQL</code>로 변경하고 아래와 같이 sql을 작성</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 54.166666666666664%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABcElEQVQoz5WSSXOCQBCF56aIIgMMm4AsLpjkkIiaVH5yYuJaZvO/vfSgJsZDSg9f9euGedN0w7bbL7x/fGKxXOFpOsPzy3zPDNPXOWaL1b8s1xviDYvVBvPlGiyOMwRBG7btwXF8uE4Lrtv6jUTLj8p3pPa84A9RmCCKEkifdjsFG9xcY/I4wehhRIwxuh9hOClQTCiOix2Uy2cHfVzfMcRtcYduL5cdJujng5JOr48ko5uoJoniuIxxkiLNOj/5IR7IOl3kg6sysl7kocktNA0LNbWOWu0yFKUOTeM0MhdCOGA5dcaFhyBNwW0BVdWgnB464rS+M1VRqShlzrKsS0Y+bFqIadEtfgxBWgjS9vnIhTquD6ZzA9xyYPk+NK5Th42LP1uOSp5rNJpgdRKGG8JtRbDo1zGdENy0wWmu3LgEAcMUYNJZJwNDCFoOdUtFncx0bp4NJ6SZKQ2rNEwuZxaEtGmO2n7A1apSxnOoHulvfYs5CW782O8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="grafana sql"
+        title="grafana sql"
+        src="/static/e90b410c126b31892b19759f5d0868a7/799d3/grafana_sql.png"
+        srcset="/static/e90b410c126b31892b19759f5d0868a7/00d96/grafana_sql.png 148w,
+/static/e90b410c126b31892b19759f5d0868a7/0b23c/grafana_sql.png 295w,
+/static/e90b410c126b31892b19759f5d0868a7/799d3/grafana_sql.png 590w,
+/static/e90b410c126b31892b19759f5d0868a7/2a3d6/grafana_sql.png 885w,
+/static/e90b410c126b31892b19759f5d0868a7/ae92f/grafana_sql.png 1180w,
+/static/e90b410c126b31892b19759f5d0868a7/eff2e/grafana_sql.png 1920w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h1 id="result"><a href="#result" aria-label="result permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Result</h1>
+<p>넥스클리퍼 - TimescaleDB - Grafana를 통해 손쉽게 Kubernetes를 모니터링 할 수있음<br>
+넥스클리퍼는 Openmetrics를 제공하고 있음<br>
+넥스클리퍼와 TimescaleDB를 사용함으로써 다음과 같은 장점을 가짐</p>
+<ul>
+<li>대용량 데이터의 저장</li>
+<li>대용량 데이터의 처리</li>
+</ul></div><div class="social-share"></div><hr class="custom-hr"/><div class="bio"><div class="author"><div class="author-description"><div class="author-image gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:72px;height:72px;border-radius:100%"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAACQklEQVQ4y61US4/SUBRuXLvyj/gnTPwV6sqFKxe6cFaSMGPihoUGoZhZTFuMzENiZQJJlTJDWIKJRpkhZoLCECaMPDoCQtvveu+FllIdQgy3OTmn595+/c49D2E8Hv9epQhkxUvAksumj2nbsKgsWpcyZJuOdsypEMv2OCdqxnAB4ByYflTEZqGAo+ZP/4/mQIXLwJiiYXL9tVFGSJNw41mEXH0okuf6MfEwddj/G3DKzGXAbi9WCOHx2xcksJ8h19Y2yZV72/hU68IH+jegA8ZMyza5/nKWRyBzl6ztxcj97de4/nQHwh2FiAcn/E5NyyZeRMHHijtZRpn+NTrHk4ObCOkPEFBlPEru4JachXBbIZHcAkCbloLtlgMFo89wfEGyJ1F8+BZFo/sd50YPxmDAz+1/buDjj/Y0ZBteMgL8eZ9GPxwbFNeaKxdnz3nHzO/4JnV4XKmgQuW0cYp+v8+EH+q0u1BTKrK6TorFImq1GgzjggxHI7Q7HcaWDIZDQluO9Lo9zpIDapqG9Y0NKIqCYHAd8fgrKPE4l8N8HtVqFbHYS+qPE5mekWWZ2djakkgwGIRE33d392Ca5oRhuVxGqVTCm2QSoijiXSqFJLU17T0SiQTS6TT0XI4wwGhUhCRJiEQiUFUV4XAYmUyGMjcmIfvukDsty3J9NBwwYXar1UKzeYYODbder/OzLEneshO8bcTuxNNOcxXL9nwJwtTnNoKblGWmjTMv/D0+66iJY6l56P8aPsSlps1/D9hVA/4BIADo8qlxIWsAAAAASUVORK5CYII=" alt="[NexClipper]" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/cbf85de7c8effeb1724f113576bcb874/c5212/profile.png 1x,
 /static/cbf85de7c8effeb1724f113576bcb874/52093/profile.png 1.5x,
 /static/cbf85de7c8effeb1724f113576bcb874/467da/profile.png 2x" /><img loading="lazy" width="72" height="72" srcset="/static/cbf85de7c8effeb1724f113576bcb874/c5212/profile.png 1x,
 /static/cbf85de7c8effeb1724f113576bcb874/52093/profile.png 1.5x,

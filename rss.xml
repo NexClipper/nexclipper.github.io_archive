@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[넥스클리퍼 기술 블로그]]></title><description><![CDATA[넥스클리퍼에서 쓰이는 기술에 대해서 기술하는 블로그입니다.]]></description><link>https://nexclipper.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Jan 2020 05:15:10 GMT</lastBuildDate><item><title><![CDATA[쿠버네티스를 공부해 본 후기]]></title><description><![CDATA[0. 들어가는 말 안녕하세요.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[넥스클리퍼 기술 블로그]]></title><description><![CDATA[넥스클리퍼에서 쓰이는 기술에 대해서 기술하는 블로그입니다.]]></description><link>https://nexclipper.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Jan 2020 05:58:13 GMT</lastBuildDate><item><title><![CDATA[쿠버네티스를 공부해 본 후기]]></title><description><![CDATA[0. 들어가는 말 안녕하세요.
 작년 9월부터 입사해서 넥스클라우드에서 프론트를 담당하고 있는 진성주라고 합니다.
 오늘은 신년을 맞이해서 가볍게 제가 작년 9월부터 시작해서 1…]]></description><link>https://nexclipper.github.io/development/쿠버네티스를-공부해-본-후기/</link><guid isPermaLink="false">https://nexclipper.github.io/development/쿠버네티스를-공부해-본-후기/</guid><pubDate>Thu, 02 Jan 2020 13:01:49 GMT</pubDate><content:encoded>&lt;h3 id=&quot;0-들어가는-말&quot;&gt;&lt;a href=&quot;#0-%EB%93%A4%EC%96%B4%EA%B0%80%EB%8A%94-%EB%A7%90&quot; aria-label=&quot;0 들어가는 말 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;0. 들어가는 말&lt;/h3&gt;
 &lt;hr&gt;
@@ -104,7 +104,15 @@ Node는 컨테이너 애플리케이션을 동작시키는 서버입니다.&lt;/
 &lt;hr&gt;
 &lt;p&gt;이상으로 제가 공부해 본것들에 대해서 정리해보았습니다.
 사실상 아직도 정리만 해보고 AKS, GKE, 회사 서버에만 배포 정도만 해봤을뿐 운용이나 실제 프로덕트에서 해보진 않아서 조금 더 개념 정리가 더 필요한 부분은 분명해보입니다.&lt;/p&gt;
-&lt;p&gt;부족한 글 읽어주셔서 감사합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[nexclipper와 grafana 연결하기]]></title><description><![CDATA[kubernetes가 설치되어있다는 전제하에 시작한다. Prerequisite System Requirements linux Go: 1.11 or above ProtocolBuffer Compiler TimescaleDB Setup build…]]></description><link>https://nexclipper.github.io/development/nexclipper와-grafana-연결하기/</link><guid isPermaLink="false">https://nexclipper.github.io/development/nexclipper와-grafana-연결하기/</guid><pubDate>Mon, 30 Dec 2019 11:12:25 GMT</pubDate><content:encoded>&lt;p&gt;kubernetes가 설치되어있다는 전제하에 시작한다.&lt;/p&gt;
+&lt;p&gt;부족한 글 읽어주셔서 감사합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[TimescaleDB와 NexClipper를 이용한 Kubernetes 모니터링하기]]></title><description><![CDATA[…]]></description><link>https://nexclipper.github.io/development/nexclipper와-grafana-연결하기/</link><guid isPermaLink="false">https://nexclipper.github.io/development/nexclipper와-grafana-연결하기/</guid><pubDate>Mon, 30 Dec 2019 11:12:25 GMT</pubDate><content:encoded>&lt;p&gt;쿠버네티스 모니터링으로 프로메테우스가 가장 많이 사용되지만 엔터프라이즈 환경에서는 다음과 같이 지원되지 않는 몇가지 문제가 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;롱텀데이터 저장&lt;/li&gt;
+&lt;li&gt;여러 클러스터, 서로 다른 서버 메트릭에 대한 글로벌 뷰&lt;/li&gt;
+&lt;li&gt;엔드포인트 증가에 따른 확장성&lt;/li&gt;
+&lt;li&gt;방화벽 내의 엔드포인트 접근&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이런 문제들을 해결하기 위해 타노스, 콜텍스등 여러 솔루션들이 나오고 있으며 이중 NexClipper를 통한 Kubernetes 모니터링을 소개 하고자 한다.&lt;/p&gt;
+&lt;p&gt;설치는 Kubernetes가 설치되어있다는 전제하에 시작한다.&lt;/p&gt;
 &lt;h1 id=&quot;prerequisite&quot;&gt;&lt;a href=&quot;#prerequisite&quot; aria-label=&quot;prerequisite permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisite&lt;/h1&gt;
 &lt;h2 id=&quot;system-requirements&quot;&gt;&lt;a href=&quot;#system-requirements&quot; aria-label=&quot;system requirements permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;System Requirements&lt;/h2&gt;
 &lt;ul&gt;
@@ -191,218 +199,8 @@ env:
             - name: NEXAGENT_KUBERNETES_NAMESPACE
               value: nexclipper&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;kubectl create -f nexagent.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;install-prometheus-and-grafana&quot;&gt;&lt;a href=&quot;#install-prometheus-and-grafana&quot; aria-label=&quot;install prometheus and grafana permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install Prometheus and Grafana&lt;/h1&gt;
-&lt;h2 id=&quot;install-prometheus&quot;&gt;&lt;a href=&quot;#install-prometheus&quot; aria-label=&quot;install prometheus permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install Prometheus&lt;/h2&gt;
-&lt;h3 id=&quot;create-a-namespace&quot;&gt;&lt;a href=&quot;#create-a-namespace&quot; aria-label=&quot;create a namespace permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create a Namespace&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;kubectl create namespace monitoring&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;create-a-deployment&quot;&gt;&lt;a href=&quot;#create-a-deployment&quot; aria-label=&quot;create a deployment permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create a Deployment&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; rbac.authorization.k8s.io/v1beta1
-&lt;span class=&quot;token key atrule&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ClusterRole
-&lt;span class=&quot;token key atrule&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; prometheus
-&lt;span class=&quot;token key atrule&quot;&gt;rules&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;apiGroups&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;token key atrule&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; nodes
-  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; nodes/proxy
-  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; services
-  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; endpoints
-  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; pods
-  &lt;span class=&quot;token key atrule&quot;&gt;verbs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;get&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;list&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;watch&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;apiGroups&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; extensions
-  &lt;span class=&quot;token key atrule&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; ingresses
-  &lt;span class=&quot;token key atrule&quot;&gt;verbs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;get&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;list&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;watch&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;nonResourceURLs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/metrics&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;token key atrule&quot;&gt;verbs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;get&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;token key atrule&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; rbac.authorization.k8s.io/v1beta1
-&lt;span class=&quot;token key atrule&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ClusterRoleBinding
-&lt;span class=&quot;token key atrule&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; prometheus
-&lt;span class=&quot;token key atrule&quot;&gt;roleRef&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;token key atrule&quot;&gt;apiGroup&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; rbac.authorization.k8s.io
-  &lt;span class=&quot;token key atrule&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ClusterRole
-  &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; prometheus
-&lt;span class=&quot;token key atrule&quot;&gt;subjects&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ServiceAccount
-  &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; default
-  &lt;span class=&quot;token key atrule&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; monitoring&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;kubectl create -f clusterRole.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;create-a-config-map&quot;&gt;&lt;a href=&quot;#create-a-config-map&quot; aria-label=&quot;create a config map permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create a Config Map&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; v1
-&lt;span class=&quot;token key atrule&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ConfigMap
-&lt;span class=&quot;token key atrule&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; prometheus&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;server&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;conf
-  &lt;span class=&quot;token key atrule&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; prometheus&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;server&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;conf
-  &lt;span class=&quot;token key atrule&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; monitoring
-&lt;span class=&quot;token key atrule&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;token key atrule&quot;&gt;prometheus.yml&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;
-    &lt;span class=&quot;token key atrule&quot;&gt;global&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;token key atrule&quot;&gt;scrape_interval&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 5s
-      &lt;span class=&quot;token key atrule&quot;&gt;evaluation_interval&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 5s
-
-    &lt;span class=&quot;token key atrule&quot;&gt;scrape_configs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;job_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;kubernetes-apiservers&apos;&lt;/span&gt;
-        &lt;span class=&quot;token key atrule&quot;&gt;kubernetes_sd_configs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; endpoints
-        &lt;span class=&quot;token key atrule&quot;&gt;scheme&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; https
-        &lt;span class=&quot;token key atrule&quot;&gt;tls_config&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;ca_file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-        &lt;span class=&quot;token key atrule&quot;&gt;bearer_token_file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; /var/run/secrets/kubernetes.io/serviceaccount/token
-        &lt;span class=&quot;token key atrule&quot;&gt;relabel_configs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_namespace&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __meta_kubernetes_service_name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __meta_kubernetes_endpoint_port_name&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; keep
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; default;kubernetes;https
-
-      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;job_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;kubernetes-nodes&apos;&lt;/span&gt;
-        &lt;span class=&quot;token key atrule&quot;&gt;scheme&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; https
-        &lt;span class=&quot;token key atrule&quot;&gt;tls_config&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;ca_file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-        &lt;span class=&quot;token key atrule&quot;&gt;bearer_token_file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; /var/run/secrets/kubernetes.io/serviceaccount/token
-        &lt;span class=&quot;token key atrule&quot;&gt;kubernetes_sd_configs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; node
-        &lt;span class=&quot;token key atrule&quot;&gt;relabel_configs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; labelmap
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __meta_kubernetes_node_label_(.+)
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __address__
-          &lt;span class=&quot;token key atrule&quot;&gt;replacement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; kubernetes.default.svc&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;443&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_node_name&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; (.+)
-          &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __metrics_path__
-          &lt;span class=&quot;token key atrule&quot;&gt;replacement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; /api/v1/nodes/$&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;/proxy/metrics
-
-      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;job_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;kubernetes-pods&apos;&lt;/span&gt;
-        &lt;span class=&quot;token key atrule&quot;&gt;kubernetes_sd_configs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; pod
-        &lt;span class=&quot;token key atrule&quot;&gt;relabel_configs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_pod_annotation_prometheus_io_scrape&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; keep
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean important&quot;&gt;true&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_pod_annotation_prometheus_io_path&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; replace
-          &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __metrics_path__
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; (.+)
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__address__&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __meta_kubernetes_pod_annotation_prometheus_io_port&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; replace
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; (&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;^&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;+)(&lt;span class=&quot;token punctuation&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;\d+)&lt;span class=&quot;token punctuation&quot;&gt;?&lt;/span&gt;;(\d+)
-          &lt;span class=&quot;token key atrule&quot;&gt;replacement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $1&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;$2
-          &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __address__
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; labelmap
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __meta_kubernetes_pod_label_(.+)
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_namespace&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; replace
-          &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; kubernetes_namespace
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_pod_name&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; replace
-          &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; kubernetes_pod_name
-
-      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;job_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;kubernetes-cadvisor&apos;&lt;/span&gt;
-        &lt;span class=&quot;token key atrule&quot;&gt;scheme&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; https
-        &lt;span class=&quot;token key atrule&quot;&gt;tls_config&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;ca_file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-        &lt;span class=&quot;token key atrule&quot;&gt;bearer_token_file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; /var/run/secrets/kubernetes.io/serviceaccount/token
-        &lt;span class=&quot;token key atrule&quot;&gt;kubernetes_sd_configs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; node
-        &lt;span class=&quot;token key atrule&quot;&gt;relabel_configs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; labelmap
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __meta_kubernetes_node_label_(.+)
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __address__
-          &lt;span class=&quot;token key atrule&quot;&gt;replacement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; kubernetes.default.svc&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;443&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_node_name&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; (.+)
-          &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __metrics_path__
-          &lt;span class=&quot;token key atrule&quot;&gt;replacement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; /api/v1/nodes/$&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;/proxy/metrics/cadvisor
-
-      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;job_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;kubernetes-service-endpoints&apos;&lt;/span&gt;
-        &lt;span class=&quot;token key atrule&quot;&gt;kubernetes_sd_configs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; endpoints
-        &lt;span class=&quot;token key atrule&quot;&gt;relabel_configs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_service_annotation_prometheus_io_scrape&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; keep
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean important&quot;&gt;true&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_service_annotation_prometheus_io_scheme&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; replace
-          &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __scheme__
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; (https&lt;span class=&quot;token punctuation&quot;&gt;?&lt;/span&gt;)
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_service_annotation_prometheus_io_path&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; replace
-          &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __metrics_path__
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; (.+)
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__address__&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __meta_kubernetes_service_annotation_prometheus_io_port&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; replace
-          &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __address__
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; (&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;^&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;+)(&lt;span class=&quot;token punctuation&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;\d+)&lt;span class=&quot;token punctuation&quot;&gt;?&lt;/span&gt;;(\d+)
-          &lt;span class=&quot;token key atrule&quot;&gt;replacement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $1&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;$2
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; labelmap
-          &lt;span class=&quot;token key atrule&quot;&gt;regex&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; __meta_kubernetes_service_label_(.+)
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_namespace&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; replace
-          &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; kubernetes_namespace
-        &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;source_labels&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;__meta_kubernetes_service_name&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-          &lt;span class=&quot;token key atrule&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; replace
-          &lt;span class=&quot;token key atrule&quot;&gt;target_label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; kubernetes_name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;kubectl create -f config-map.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;create-a-prometheus-deployment&quot;&gt;&lt;a href=&quot;#create-a-prometheus-deployment&quot; aria-label=&quot;create a prometheus deployment permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create a Prometheus Deployment&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: prometheus-deployment
-  namespace: monitoring
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: prometheus-server
-  template:
-    metadata:
-      labels:
-        app: prometheus-server
-    spec:
-      containers:
-        - name: prometheus
-          image: prom/prometheus:v2.2.1
-          args:
-            - &amp;quot;--config.file=/etc/prometheus/prometheus.yml&amp;quot;
-            - &amp;quot;--storage.tsdb.path=/prometheus/&amp;quot;
-          ports:
-            - containerPort: 9090
-          volumeMounts:
-            - name: prometheus-config-volume
-              mountPath: /etc/prometheus/
-            - name: prometheus-storage-volume
-              mountPath: /prometheus/
-      volumes:
-        - name: prometheus-config-volume
-          configMap:
-            defaultMode: 420
-            name: prometheus-server-conf
-
-        - name: prometheus-storage-volume
-          emptyDir: {}
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: prometheus-service
-  namespace: monitoring
-  annotations:
-      prometheus.io/scrape: &amp;#39;true&amp;#39;
-      prometheus.io/port:   &amp;#39;9090&amp;#39;
-
-spec:
-  selector:
-    app: prometheus-server
-  type: NodePort
-  ports:
-    - port: 8080
-      targetPort: 9090
-      nodePort: 30000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;kubectl create -f prometheus-deployment.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;install-grafana&quot;&gt;&lt;a href=&quot;#install-grafana&quot; aria-label=&quot;install grafana permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install Grafana&lt;/h2&gt;
-&lt;h3 id=&quot;create-a-configmap&quot;&gt;&lt;a href=&quot;#create-a-configmap&quot; aria-label=&quot;create a configmap permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create a Configmap&lt;/h3&gt;
+&lt;h1 id=&quot;install-grafana&quot;&gt;&lt;a href=&quot;#install-grafana&quot; aria-label=&quot;install grafana permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install Grafana&lt;/h1&gt;
+&lt;h2 id=&quot;create-a-configmap&quot;&gt;&lt;a href=&quot;#create-a-configmap&quot; aria-label=&quot;create a configmap permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create a Configmap&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; v1
 &lt;span class=&quot;token key atrule&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ConfigMap
 &lt;span class=&quot;token key atrule&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
@@ -425,7 +223,7 @@ spec:
         &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;kubectl create -f grafana-datasource-config.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;create-a-grafana-deployment&quot;&gt;&lt;a href=&quot;#create-a-grafana-deployment&quot; aria-label=&quot;create a grafana deployment permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create a Grafana Deployment&lt;/h3&gt;
+&lt;h2 id=&quot;create-a-grafana-deployment&quot;&gt;&lt;a href=&quot;#create-a-grafana-deployment&quot; aria-label=&quot;create a grafana deployment permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create a Grafana Deployment&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; apps/v1
 &lt;span class=&quot;token key atrule&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Deployment
 &lt;span class=&quot;token key atrule&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
@@ -564,7 +362,67 @@ spec:
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[기술 블로그 오픈]]></title><description><![CDATA[넥스클리퍼의 기술 블로그를 시작합니다. NexClipper 기술블로그는 Gatsby를 기반으로 하고 있으며 gatsby-starter-bee 테마를 사용 중입니다. 블로그 내용을 포함한 저희의 모든 기술 활동에 대해 다양한 피드백과 Pull…]]></description><link>https://nexclipper.github.io/development/기술-블로그-오픈/</link><guid isPermaLink="false">https://nexclipper.github.io/development/기술-블로그-오픈/</guid><pubDate>Tue, 24 Dec 2019 19:12:24 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.nexclipper.io/&quot;&gt;넥스클리퍼&lt;/a&gt;의 기술 블로그를 시작합니다.&lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;dashboard-추가&quot;&gt;&lt;a href=&quot;#dashboard-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;dashboard 추가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dashboard 추가&lt;/h2&gt;
+&lt;p&gt;왼쪽의 &lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt;버튼을 클릭한 후에 &lt;code class=&quot;language-text&quot;&gt;create dashboard&lt;/code&gt; 로 들어감
+&lt;code class=&quot;language-text&quot;&gt;Add Query&lt;/code&gt; 를 클릭&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.166666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABFUlEQVQoz62R206DQBCGubLaiEZYTrtAKYfSoGm8amp8YtPUciwaH+53F4qp1cheePGFmWHnm2FRPtoGh/YdRVnhZfuK7S7Hbl9iX1Qn1Gc5J6+QlzWq5g1l3aKoDtzRQNFuVWTZAzw/gGk5MEy7gxgmCDGh6wY0jXS5TvraEJv8nOv6cBwGxjw4lEERL6MwQciZz2MkScrjGFG04HmE2SxEEESg1OsGiaED/WDr+OwXUQwuFE1CJlivN1itHrF5ekaaZp1MDGPM/yH8DeVaVTuRaBSIeLm8P24Yf9Uo8+SEk8kl/3YXNr+HAcuisGz6vcZzaeHpz/iL4Zy0cGy61IYXZxuONYwKp9Or/xVqdzcgkvcjwydcrT6pI3Gd5gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;grafana create dashboard&quot;
+        title=&quot;grafana create dashboard&quot;
+        src=&quot;/static/efa29914ded0d472617f4436d384bb88/799d3/grafana_create_dashboard.png&quot;
+        srcset=&quot;/static/efa29914ded0d472617f4436d384bb88/00d96/grafana_create_dashboard.png 148w,
+/static/efa29914ded0d472617f4436d384bb88/0b23c/grafana_create_dashboard.png 295w,
+/static/efa29914ded0d472617f4436d384bb88/799d3/grafana_create_dashboard.png 590w,
+/static/efa29914ded0d472617f4436d384bb88/2a3d6/grafana_create_dashboard.png 885w,
+/static/efa29914ded0d472617f4436d384bb88/ae92f/grafana_create_dashboard.png 1180w,
+/static/efa29914ded0d472617f4436d384bb88/eff2e/grafana_create_dashboard.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Query&lt;/code&gt;를 &lt;code class=&quot;language-text&quot;&gt;PostgreSQL&lt;/code&gt;로 변경하고 아래와 같이 sql을 작성&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.166666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABcElEQVQoz5WSSXOCQBCF56aIIgMMm4AsLpjkkIiaVH5yYuJaZvO/vfSgJsZDSg9f9euGedN0w7bbL7x/fGKxXOFpOsPzy3zPDNPXOWaL1b8s1xviDYvVBvPlGiyOMwRBG7btwXF8uE4Lrtv6jUTLj8p3pPa84A9RmCCKEkifdjsFG9xcY/I4wehhRIwxuh9hOClQTCiOix2Uy2cHfVzfMcRtcYduL5cdJujng5JOr48ko5uoJoniuIxxkiLNOj/5IR7IOl3kg6sysl7kocktNA0LNbWOWu0yFKUOTeM0MhdCOGA5dcaFhyBNwW0BVdWgnB464rS+M1VRqShlzrKsS0Y+bFqIadEtfgxBWgjS9vnIhTquD6ZzA9xyYPk+NK5Th42LP1uOSp5rNJpgdRKGG8JtRbDo1zGdENy0wWmu3LgEAcMUYNJZJwNDCFoOdUtFncx0bp4NJ6SZKQ2rNEwuZxaEtGmO2n7A1apSxnOoHulvfYs5CW782O8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;grafana sql&quot;
+        title=&quot;grafana sql&quot;
+        src=&quot;/static/e90b410c126b31892b19759f5d0868a7/799d3/grafana_sql.png&quot;
+        srcset=&quot;/static/e90b410c126b31892b19759f5d0868a7/00d96/grafana_sql.png 148w,
+/static/e90b410c126b31892b19759f5d0868a7/0b23c/grafana_sql.png 295w,
+/static/e90b410c126b31892b19759f5d0868a7/799d3/grafana_sql.png 590w,
+/static/e90b410c126b31892b19759f5d0868a7/2a3d6/grafana_sql.png 885w,
+/static/e90b410c126b31892b19759f5d0868a7/ae92f/grafana_sql.png 1180w,
+/static/e90b410c126b31892b19759f5d0868a7/eff2e/grafana_sql.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;result&quot;&gt;&lt;a href=&quot;#result&quot; aria-label=&quot;result permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Result&lt;/h1&gt;
+&lt;p&gt;넥스클리퍼 - TimescaleDB - Grafana를 통해 손쉽게 Kubernetes를 모니터링 할 수있음&lt;br&gt;
+넥스클리퍼는 Openmetrics를 제공하고 있음&lt;br&gt;
+넥스클리퍼와 TimescaleDB를 사용함으로써 다음과 같은 장점을 가짐&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;대용량 데이터의 저장&lt;/li&gt;
+&lt;li&gt;대용량 데이터의 처리&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[기술 블로그 오픈]]></title><description><![CDATA[넥스클리퍼의 기술 블로그를 시작합니다. NexClipper 기술블로그는 Gatsby를 기반으로 하고 있으며 gatsby-starter-bee 테마를 사용 중입니다. 블로그 내용을 포함한 저희의 모든 기술 활동에 대해 다양한 피드백과 Pull…]]></description><link>https://nexclipper.github.io/development/기술-블로그-오픈/</link><guid isPermaLink="false">https://nexclipper.github.io/development/기술-블로그-오픈/</guid><pubDate>Tue, 24 Dec 2019 19:12:24 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.nexclipper.io/&quot;&gt;넥스클리퍼&lt;/a&gt;의 기술 블로그를 시작합니다.&lt;/p&gt;
 &lt;p&gt;NexClipper 기술블로그는 &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby&lt;/a&gt;를 기반으로 하고 있으며 &lt;a href=&quot;https://github.com/JaeYeopHan/gatsby-starter-bee&quot;&gt;gatsby-starter-bee&lt;/a&gt; 테마를 사용 중입니다.&lt;/p&gt;
 &lt;p&gt;블로그 내용을 포함한 저희의 모든 기술 활동에 대해 다양한 피드백과 Pull Request를 기대합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[about]]></title><description><![CDATA[Your name Thank you for reading my resume. If you want to contact me, Please send me an email.]]></description><link>https://nexclipper.github.io/resume-en/</link><guid isPermaLink="false">https://nexclipper.github.io/resume-en/</guid><pubDate>Sun, 27 Jan 2019 16:21:13 GMT</pubDate><content:encoded>&lt;h1 id=&quot;your-name&quot;&gt;&lt;a href=&quot;#your-name&quot; aria-label=&quot;your name permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Your name&lt;/h1&gt;
 &lt;div align=&quot;center&quot;&gt;
