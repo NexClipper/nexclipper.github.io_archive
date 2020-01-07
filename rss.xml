@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[넥스클리퍼 기술 블로그]]></title><description><![CDATA[넥스클리퍼에서 쓰이는 기술에 대해서 기술하는 블로그입니다.]]></description><link>https://nexclipper.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Jan 2020 05:58:13 GMT</lastBuildDate><item><title><![CDATA[쿠버네티스를 공부해 본 후기]]></title><description><![CDATA[0. 들어가는 말 안녕하세요.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[넥스클리퍼 기술 블로그]]></title><description><![CDATA[넥스클리퍼에서 쓰이는 기술에 대해서 기술하는 블로그입니다.]]></description><link>https://nexclipper.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Jan 2020 01:10:26 GMT</lastBuildDate><item><title><![CDATA[쿠버네티스를 공부해 본 후기]]></title><description><![CDATA[0. 들어가는 말 안녕하세요.
 작년 9월부터 입사해서 넥스클라우드에서 프론트를 담당하고 있는 진성주라고 합니다.
 오늘은 신년을 맞이해서 가볍게 제가 작년 9월부터 시작해서 1…]]></description><link>https://nexclipper.github.io/development/쿠버네티스를-공부해-본-후기/</link><guid isPermaLink="false">https://nexclipper.github.io/development/쿠버네티스를-공부해-본-후기/</guid><pubDate>Thu, 02 Jan 2020 13:01:49 GMT</pubDate><content:encoded>&lt;h3 id=&quot;0-들어가는-말&quot;&gt;&lt;a href=&quot;#0-%EB%93%A4%EC%96%B4%EA%B0%80%EB%8A%94-%EB%A7%90&quot; aria-label=&quot;0 들어가는 말 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;0. 들어가는 말&lt;/h3&gt;
 &lt;hr&gt;
@@ -104,15 +104,44 @@ Node는 컨테이너 애플리케이션을 동작시키는 서버입니다.&lt;/
 &lt;hr&gt;
 &lt;p&gt;이상으로 제가 공부해 본것들에 대해서 정리해보았습니다.
 사실상 아직도 정리만 해보고 AKS, GKE, 회사 서버에만 배포 정도만 해봤을뿐 운용이나 실제 프로덕트에서 해보진 않아서 조금 더 개념 정리가 더 필요한 부분은 분명해보입니다.&lt;/p&gt;
-&lt;p&gt;부족한 글 읽어주셔서 감사합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[TimescaleDB와 NexClipper를 이용한 Kubernetes 모니터링하기]]></title><description><![CDATA[…]]></description><link>https://nexclipper.github.io/development/nexclipper와-grafana-연결하기/</link><guid isPermaLink="false">https://nexclipper.github.io/development/nexclipper와-grafana-연결하기/</guid><pubDate>Mon, 30 Dec 2019 11:12:25 GMT</pubDate><content:encoded>&lt;p&gt;쿠버네티스 모니터링으로 프로메테우스가 가장 많이 사용되지만 엔터프라이즈 환경에서는 다음과 같이 지원되지 않는 몇가지 문제가 있다.&lt;/p&gt;
+&lt;p&gt;부족한 글 읽어주셔서 감사합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[TimescaleDB와 NexClipper를 이용한 Kubernetes 모니터링하기]]></title><description><![CDATA[쿠버네티스 모니터링으로 프로메테우스가 가장 많이 사용되지만 엔터프라이즈 환경에서는 다음과 같이 지원되지 않는 몇가지 문제가 있다. 데이터 스토리지: 내구성이 낮은 데이터 스토리지는 롱텀 데이터 저장을 못한다. logging…]]></description><link>https://nexclipper.github.io/development/nexclipper와-grafana-연결하기/</link><guid isPermaLink="false">https://nexclipper.github.io/development/nexclipper와-grafana-연결하기/</guid><pubDate>Mon, 30 Dec 2019 11:12:25 GMT</pubDate><content:encoded>&lt;p&gt;쿠버네티스 모니터링으로 프로메테우스가 가장 많이 사용되지만 엔터프라이즈 환경에서는 다음과 같이 지원되지 않는 몇가지 문제가 있다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;롱텀데이터 저장&lt;/li&gt;
+&lt;li&gt;데이터 스토리지: 내구성이 낮은 데이터 스토리지는 롱텀 데이터 저장을 못한다.&lt;/li&gt;
+&lt;li&gt;logging - 이벤트 로깅 시스템이 아니라 메트릭스를 수집하고 처리하도록 설계 되었다.&lt;/li&gt;
+&lt;li&gt;automatic horizontal scaling&lt;/li&gt;
+&lt;li&gt;user management&lt;/li&gt;
 &lt;li&gt;여러 클러스터, 서로 다른 서버 메트릭에 대한 글로벌 뷰&lt;/li&gt;
 &lt;li&gt;엔드포인트 증가에 따른 확장성&lt;/li&gt;
 &lt;li&gt;방화벽 내의 엔드포인트 접근&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;이런 문제들을 해결하기 위해 타노스, 콜텍스등 여러 솔루션들이 나오고 있으며 이중 NexClipper를 통한 Kubernetes 모니터링을 소개 하고자 한다.&lt;/p&gt;
-&lt;p&gt;설치는 Kubernetes가 설치되어있다는 전제하에 시작한다.&lt;/p&gt;
+&lt;p&gt;이런 문제들을 해결하기 위해 타노스, 콜텍스등 여러 솔루션들이 나오고 있으며 이중 &lt;a href=&quot;nexclipper.io&quot;&gt;NexClipper&lt;/a&gt;를 통한 Kubernetes 모니터링을 소개 하고자 한다.&lt;/p&gt;
+&lt;p&gt;NexClipper는 아래 그림과 같이 쿠버네티스 모니터링에 최적화 되어있으며, 각 노드도 모니터링 할 수 있게 도와주는 솔루션이다. 물론 OpenMetrics도 지원을한다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50.500715307582254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABqElEQVQoz3VS22rbQBDV//9PyUNe8tIWUggpNBTXuE5cOZJ1XWnv19PZTagThy4MO6M9OnM7VUoJl5ZPjBHOOXjv/1mOQwjlPVy8Zz/GhAofzgthBuA1QUyx3P7zJ8yHHZ7qI9g8v6BLAYSjBJm4elvVGZAJPZSxBIoF7EKCfdpCMQbGJbhQsC5AG1csY10mDCGDI4aHn1i6Hpb83A6TuZ2Ebdfgy/aAum7w+9hRdS2MS5BK4+vNFYSyFEcI7SFNQOWJoO8H7Hc7jMMAYz2sD1gyIY3ryDpsmhHjxNCeejRkXGp0I8PdwwbtxJE5lA3FiDAQeMZErRhrqbr02jqKT91Ak3GTQEVglAn75xmP9QnP/YpFBQh6I84yrndLOW86bzlgFhzt2EPwFZaSTXSfxgGSvucFKKPRTCP4QsWQnxVQ/U82RRLJ4dtmwp+WI3hLo7D4vmN4PK60KBqN1Tj0Ave/JiLz77d8SWizbOBxdcuwOUg4I5GCw839gh97SQkMItm2lri+W4jMFmV80OFbYQshodVKLa7QWkMpBSXOsTGmjCNjhBDln7/Q+geP8DdUZAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;nexclipper architecture&quot;
+        title=&quot;nexclipper architecture&quot;
+        src=&quot;/static/1337438a20ceb1489751caccbb98c7e2/799d3/nexclipper_architecture.png&quot;
+        srcset=&quot;/static/1337438a20ceb1489751caccbb98c7e2/00d96/nexclipper_architecture.png 148w,
+/static/1337438a20ceb1489751caccbb98c7e2/0b23c/nexclipper_architecture.png 295w,
+/static/1337438a20ceb1489751caccbb98c7e2/799d3/nexclipper_architecture.png 590w,
+/static/1337438a20ceb1489751caccbb98c7e2/2a3d6/nexclipper_architecture.png 885w,
+/static/1337438a20ceb1489751caccbb98c7e2/ae92f/nexclipper_architecture.png 1180w,
+/static/1337438a20ceb1489751caccbb98c7e2/935b6/nexclipper_architecture.png 1398w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;NexClipper로 metric들을 수집하여 Grafana로 모니터링 하는 방법을 소개한다.&lt;/p&gt;
+&lt;p&gt;Kubernetes가 설치되어 있다는 전제하에 진행한다.&lt;/p&gt;
 &lt;h1 id=&quot;prerequisite&quot;&gt;&lt;a href=&quot;#prerequisite&quot; aria-label=&quot;prerequisite permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisite&lt;/h1&gt;
 &lt;h2 id=&quot;system-requirements&quot;&gt;&lt;a href=&quot;#system-requirements&quot; aria-label=&quot;system requirements permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;System Requirements&lt;/h2&gt;
 &lt;ul&gt;
@@ -416,12 +445,13 @@ env:
       /&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&quot;result&quot;&gt;&lt;a href=&quot;#result&quot; aria-label=&quot;result permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Result&lt;/h1&gt;
-&lt;p&gt;넥스클리퍼 - TimescaleDB - Grafana를 통해 손쉽게 Kubernetes를 모니터링 할 수있음&lt;br&gt;
-넥스클리퍼는 Openmetrics를 제공하고 있음&lt;br&gt;
-넥스클리퍼와 TimescaleDB를 사용함으로써 다음과 같은 장점을 가짐&lt;/p&gt;
+&lt;p&gt;NexClipper에서 metric들을 수집하여 TimescaleDB로 저장하고, 저장한 데이터들을 Grafana를 통해 손쉽게 Kubernetes를 모니터링 할 수 있다는 것을 알아보았다.&lt;/p&gt;
+&lt;p&gt;NexClipper와 TimescaleDB를 사용함으로써 다음과 같은 장점을 가진다&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;대용량 데이터의 저장&lt;/li&gt;
-&lt;li&gt;대용량 데이터의 처리&lt;/li&gt;
+&lt;li&gt;대용량 데이터의 저장 및 처리&lt;/li&gt;
+&lt;li&gt;Openmetrics를 이용하여 다른 플랫폼과의 연동&lt;/li&gt;
+&lt;li&gt;무한한 확장성을 가지며 스토리지가 허용하는 만큼 최대한 메트릭 데이터 보관 가능&lt;/li&gt;
+&lt;li&gt;복잡한 네트워크 보안 정책이 적용되어 있는 환경에서도 Agent는 수집한 Metric정보를 서버로 전송하여 저장하고 조회 가능&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[기술 블로그 오픈]]></title><description><![CDATA[넥스클리퍼의 기술 블로그를 시작합니다. NexClipper 기술블로그는 Gatsby를 기반으로 하고 있으며 gatsby-starter-bee 테마를 사용 중입니다. 블로그 내용을 포함한 저희의 모든 기술 활동에 대해 다양한 피드백과 Pull…]]></description><link>https://nexclipper.github.io/development/기술-블로그-오픈/</link><guid isPermaLink="false">https://nexclipper.github.io/development/기술-블로그-오픈/</guid><pubDate>Tue, 24 Dec 2019 19:12:24 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.nexclipper.io/&quot;&gt;넥스클리퍼&lt;/a&gt;의 기술 블로그를 시작합니다.&lt;/p&gt;
 &lt;p&gt;NexClipper 기술블로그는 &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby&lt;/a&gt;를 기반으로 하고 있으며 &lt;a href=&quot;https://github.com/JaeYeopHan/gatsby-starter-bee&quot;&gt;gatsby-starter-bee&lt;/a&gt; 테마를 사용 중입니다.&lt;/p&gt;
 &lt;p&gt;블로그 내용을 포함한 저희의 모든 기술 활동에 대해 다양한 피드백과 Pull Request를 기대합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[about]]></title><description><![CDATA[Your name Thank you for reading my resume. If you want to contact me, Please send me an email.]]></description><link>https://nexclipper.github.io/resume-en/</link><guid isPermaLink="false">https://nexclipper.github.io/resume-en/</guid><pubDate>Sun, 27 Jan 2019 16:21:13 GMT</pubDate><content:encoded>&lt;h1 id=&quot;your-name&quot;&gt;&lt;a href=&quot;#your-name&quot; aria-label=&quot;your name permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Your name&lt;/h1&gt;
