@@ -1,13 +1,30 @@
 ---
-title: nexclipper와 grafana 연결하기
+title: TimescaleDB와 NexClipper를 이용한 Kubernetes 모니터링하기
 date: 2019-12-30 11:12:25
 category: development
 draft: false
 ---
+쿠버네티스 모니터링으로 프로메테우스가 가장 많이 사용되지만 엔터프라이즈 환경에서는 다음과 같이 지원되지 않는 몇가지 문제가 있다.
+- 데이터 스토리지: 내구성이 낮은 데이터 스토리지는 롱텀 데이터 저장을 못한다.
+- logging - 이벤트 로깅 시스템이 아니라 메트릭스를 수집하고 처리하도록 설계 되었다.
+- automatic horizontal scaling
+- user management
+- 여러 클러스터, 서로 다른 서버 메트릭에 대한 글로벌 뷰
+- 엔드포인트 증가에 따른 확장성
+- 방화벽 내의 엔드포인트 접근
 
-kubernetes가 설치되어있다는 전제하에 시작한다.
+이런 문제들을 해결하기 위해 타노스, 콜텍스등 여러 솔루션들이 나오고 있으며 이중 [NexClipper](nexclipper.io)를 통한 Kubernetes 모니터링을 소개 하고자 한다.
+
+NexClipper는 아래 그림과 같이 쿠버네티스 모니터링에 최적화 되어있으며, 각 노드도 모니터링 할 수 있게 도와주는 솔루션이다. 물론 OpenMetrics도 지원을한다.
+
+![](./images/nexclipper_architecture.png)
+
+NexClipper로 metric들을 수집하여 Grafana로 모니터링 하는 방법을 소개한다.
+
+Kubernetes가 설치되어 있다는 전제하에 진행한다.
 
 # Prerequisite
+
 ## System Requirements
 - linux
 - Go: 1.11 or above
@@ -132,241 +149,8 @@ env:
 kubectl create -f nexagent.yaml
 ```
 
-# Install Prometheus and Grafana
-## Install Prometheus
-### Create a Namespace
-
-```shell script
-kubectl create namespace monitoring
-```
-
-### Create a Deployment
-```yaml
-apiVersion: rbac.authorization.k8s.io/v1beta1
-kind: ClusterRole
-metadata:
-  name: prometheus
-rules:
-- apiGroups: [""]
-  resources:
-  - nodes
-  - nodes/proxy
-  - services
-  - endpoints
-  - pods
-  verbs: ["get", "list", "watch"]
-- apiGroups:
-  - extensions
-  resources:
-  - ingresses
-  verbs: ["get", "list", "watch"]
-- nonResourceURLs: ["/metrics"]
-  verbs: ["get"]
----
-apiVersion: rbac.authorization.k8s.io/v1beta1
-kind: ClusterRoleBinding
-metadata:
-  name: prometheus
-roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: ClusterRole
-  name: prometheus
-subjects:
-- kind: ServiceAccount
-  name: default
-  namespace: monitoring
-```
-
-```shell script
-kubectl create -f clusterRole.yaml
-```
-
-### Create a Config Map
-```yaml
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: prometheus-server-conf
-  labels:
-    name: prometheus-server-conf
-  namespace: monitoring
-data:
-  prometheus.yml: |-
-    global:
-      scrape_interval: 5s
-      evaluation_interval: 5s
-
-    scrape_configs:
-      - job_name: 'kubernetes-apiservers'
-        kubernetes_sd_configs:
-        - role: endpoints
-        scheme: https
-        tls_config:
-          ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-        bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
-        relabel_configs:
-        - source_labels: [__meta_kubernetes_namespace, __meta_kubernetes_service_name, __meta_kubernetes_endpoint_port_name]
-          action: keep
-          regex: default;kubernetes;https
-
-      - job_name: 'kubernetes-nodes'
-        scheme: https
-        tls_config:
-          ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-        bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
-        kubernetes_sd_configs:
-        - role: node
-        relabel_configs:
-        - action: labelmap
-          regex: __meta_kubernetes_node_label_(.+)
-        - target_label: __address__
-          replacement: kubernetes.default.svc:443
-        - source_labels: [__meta_kubernetes_node_name]
-          regex: (.+)
-          target_label: __metrics_path__
-          replacement: /api/v1/nodes/${1}/proxy/metrics
-
-      - job_name: 'kubernetes-pods'
-        kubernetes_sd_configs:
-        - role: pod
-        relabel_configs:
-        - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_scrape]
-          action: keep
-          regex: true
-        - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_path]
-          action: replace
-          target_label: __metrics_path__
-          regex: (.+)
-        - source_labels: [__address__, __meta_kubernetes_pod_annotation_prometheus_io_port]
-          action: replace
-          regex: ([^:]+)(?::\d+)?;(\d+)
-          replacement: $1:$2
-          target_label: __address__
-        - action: labelmap
-          regex: __meta_kubernetes_pod_label_(.+)
-        - source_labels: [__meta_kubernetes_namespace]
-          action: replace
-          target_label: kubernetes_namespace
-        - source_labels: [__meta_kubernetes_pod_name]
-          action: replace
-          target_label: kubernetes_pod_name
-
-      - job_name: 'kubernetes-cadvisor'
-        scheme: https
-        tls_config:
-          ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-        bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
-        kubernetes_sd_configs:
-        - role: node
-        relabel_configs:
-        - action: labelmap
-          regex: __meta_kubernetes_node_label_(.+)
-        - target_label: __address__
-          replacement: kubernetes.default.svc:443
-        - source_labels: [__meta_kubernetes_node_name]
-          regex: (.+)
-          target_label: __metrics_path__
-          replacement: /api/v1/nodes/${1}/proxy/metrics/cadvisor
-
-      - job_name: 'kubernetes-service-endpoints'
-        kubernetes_sd_configs:
-        - role: endpoints
-        relabel_configs:
-        - source_labels: [__meta_kubernetes_service_annotation_prometheus_io_scrape]
-          action: keep
-          regex: true
-        - source_labels: [__meta_kubernetes_service_annotation_prometheus_io_scheme]
-          action: replace
-          target_label: __scheme__
-          regex: (https?)
-        - source_labels: [__meta_kubernetes_service_annotation_prometheus_io_path]
-          action: replace
-          target_label: __metrics_path__
-          regex: (.+)
-        - source_labels: [__address__, __meta_kubernetes_service_annotation_prometheus_io_port]
-          action: replace
-          target_label: __address__
-          regex: ([^:]+)(?::\d+)?;(\d+)
-          replacement: $1:$2
-        - action: labelmap
-          regex: __meta_kubernetes_service_label_(.+)
-        - source_labels: [__meta_kubernetes_namespace]
-          action: replace
-          target_label: kubernetes_namespace
-        - source_labels: [__meta_kubernetes_service_name]
-          action: replace
-          target_label: kubernetes_name
-```
-
-```shell script
-kubectl create -f config-map.yaml
-```
-
-### Create a Prometheus Deployment
-
-```shell script
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: prometheus-deployment
-  namespace: monitoring
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: prometheus-server
-  template:
-    metadata:
-      labels:
-        app: prometheus-server
-    spec:
-      containers:
-        - name: prometheus
-          image: prom/prometheus:v2.2.1
-          args:
-            - "--config.file=/etc/prometheus/prometheus.yml"
-            - "--storage.tsdb.path=/prometheus/"
-          ports:
-            - containerPort: 9090
-          volumeMounts:
-            - name: prometheus-config-volume
-              mountPath: /etc/prometheus/
-            - name: prometheus-storage-volume
-              mountPath: /prometheus/
-      volumes:
-        - name: prometheus-config-volume
-          configMap:
-            defaultMode: 420
-            name: prometheus-server-conf
-
-        - name: prometheus-storage-volume
-          emptyDir: {}
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: prometheus-service
-  namespace: monitoring
-  annotations:
-      prometheus.io/scrape: 'true'
-      prometheus.io/port:   '9090'
-
-spec:
-  selector:
-    app: prometheus-server
-  type: NodePort
-  ports:
-    - port: 8080
-      targetPort: 9090
-      nodePort: 30000
-```
-
-```shell script
-kubectl create -f prometheus-deployment.yaml
-```
-
-## Install Grafana
-### Create a Configmap
+# Install Grafana
+## Create a Configmap
 
 ```yaml
 apiVersion: v1
@@ -396,7 +180,7 @@ data:
 kubectl create -f grafana-datasource-config.yaml
 ```
 
-### Create a Grafana Deployment
+## Create a Grafana Deployment
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -479,3 +263,27 @@ SQL 항목에 있는 PostgreSQL을 클릭한다.
 
 아래와 같이 항목을 작성한 후 `Save & Test` 버튼을 클릭하면 `Database Connection OK` 라는 메세지가 뜬다.
 ![](./images/grafana_postgre.PNG)
+
+## Dashboard 추가
+
+왼쪽의 `+`버튼을 클릭한 후에 `create dashboard` 로 들어감
+`Add Query` 를 클릭
+
+
+![](./images/grafana_create_dashboard.PNG)
+
+`Query`를 `PostgreSQL`로 변경하고 아래와 같이 sql을 작성
+
+
+![](./images/grafana_sql.PNG)
+
+# Result
+NexClipper에서 metric들을 수집하여 TimescaleDB로 저장하고, 저장한 데이터들을 Grafana를 통해 손쉽게 Kubernetes를 모니터링 할 수 있다는 것을 알아보았다.
+
+NexClipper와 TimescaleDB를 사용함으로써 다음과 같은 장점을 가진다
+
+- 대용량 데이터의 저장 및 처리
+- Openmetrics를 이용하여 다른 플랫폼과의 연동
+- 무한한 확장성을 가지며 스토리지가 허용하는 만큼 최대한 메트릭 데이터 보관 가능
+
+- 복잡한 네트워크 보안 정책이 적용되어 있는 환경에서도 Agent는 수집한 Metric정보를 서버로 전송하여 저장하고 조회 가능
