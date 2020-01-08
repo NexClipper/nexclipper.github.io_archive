@@ -13,7 +13,7 @@ draft: false
 - 엔드포인트 증가에 따른 확장성
 - 방화벽 내의 엔드포인트 접근
 
-이런 문제들을 해결하기 위해 타노스, 콜텍스등 여러 솔루션들이 나오고 있으며 이중 [NexClipper](nexclipper.io)를 통한 Kubernetes 모니터링을 소개 하고자 한다.
+이런 문제들을 해결하기 위해 타노스, 콜텍스등 여러 솔루션들이 나오고 있으며 이중 [NexClipper](https://github.com/NexClipper/NexClipper)를 통한 Kubernetes 모니터링을 소개 하고자 한다.
 
 NexClipper는 아래 그림과 같이 쿠버네티스 모니터링에 최적화 되어있으며, 각 노드도 모니터링 할 수 있게 도와주는 솔루션이다. 물론 OpenMetrics도 지원을한다.
 
